@@ -1,6 +1,10 @@
 @import "nullstyle.css";
 
-:root {}
+:root {
+    --color-1: #44c477;
+    --color-2: #ff681c;
+    --color-3: #7993a6;
+}
 
 html, body {
     height: 100%;
@@ -12,8 +16,6 @@ body {
 }
 
 .wrapper {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     min-height: 100%;
     overflow: hidden;
 }
