@@ -24,3 +24,15 @@ body {
     padding: 0 20px;
 }
 
+/* ----------------------------------- page ----------------------------------- */
+
+.page {}
+
+.page__main-block {}
+
+.main-block {
+    padding: 64px 0;
+}
+
+.main-block__container {}
+
