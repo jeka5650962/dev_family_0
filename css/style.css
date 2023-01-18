@@ -86,6 +86,10 @@ body {
     margin: 0 0 10px 0;
 }
 
+.cameras__brand-label {
+    cursor: pointer;
+}
+
 .checkbox {
     position: absolute;
     width: 1px;
@@ -104,7 +108,7 @@ body {
 
 .checkbox:checked + .check-style::before {
     content: '';
-    background-color: #7993a6;
+    background: url("../icons/check.svg") center no-repeat #7993a6;
     width: 18px;
     height: 18px;
     border-radius: 4px;
@@ -113,6 +117,23 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.checkbox:disabled + .check-style::before {
+    content: '';
+    background-color: #dedede;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: auto;
+}
+
+/*.checkbox:focus + .check-style {
+    box-shadow: 0 0 0 1px #000;
+}*/
 
 .cameras__name {
     padding: 0 0 0 27px;
