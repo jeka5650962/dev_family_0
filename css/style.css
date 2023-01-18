@@ -51,7 +51,7 @@ body {
 }
 
 .cameras__price {
-    display: inline-block;
+    display: flex;
 }
 
 .cameras__price-label {
@@ -64,11 +64,19 @@ body {
 
 .cameras__price-input {
     border: 1px solid #dbdbdb;
-    border-radius: 4px;
     line-height: 1.4;
     padding: 10px 12px;
     max-width: 112px;
     cursor: pointer;
+}
+
+.cameras__price-input_1 {
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+.cameras__price-input_2 {
+    border-radius: 0 4px 4px 0;
 }
 
 .cameras__items {}
