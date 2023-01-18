@@ -1,11 +1,5 @@
 @import "nullstyle.css";
 
-:root {
-    --color-1: #44c477;
-    --color-2: #ff681c;
-    --color-3: #7993a6;
-}
-
 html, body {
     height: 100%;
 }
@@ -13,6 +7,8 @@ html, body {
 body {
     font-family: 'Montserrat', sans-serif;
     color: #1b1b1b;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .wrapper {
@@ -20,7 +16,7 @@ body {
     overflow: hidden;
 }
 
-._container {
+[class*="__container"] {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
@@ -28,27 +24,54 @@ body {
 
 /* ----------------------------------- page ----------------------------------- */
 
-.page {}
-
-.page__main-block {}
-
-.main-block {
+.page {
     padding: 64px 0;
 }
 
-.main-block__container {}
+.cameras {}
+
+.cameras__body {
+    display: flex;
+    column-gap: 38px;
+}
+
+.cameras__filter {}
+
+.cameras__count {
+    color: #898989;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+}
+
+.cameras__title {
+    line-height: 1.4;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0 0 13px 0;
+}
+
+.cameras__price {
+    display: inline-block;
+}
+
+.cameras__price-label {
+    line-height: 1.4;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+    margin: 0 0 12px 0;
+}
+
+.cameras__price-input {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    line-height: 1.4;
+    padding: 10px 12px;
+    max-width: 112px;
+    cursor: pointer;
+}
+
+.cameras__items {}
 
 /* ----------------------------------- @media ----------------------------------- */
-
-@media (max-width: 1199px) {
-    ._container {
-        max-width: 960px;
-    }
-}
-
-@media (max-width: 991px) {
-    ._container {
-        max-width: 720px;
-    }
-}
 
