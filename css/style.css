@@ -86,58 +86,51 @@ body {
     margin: 0 0 10px 0;
 }
 
+/* ----------------------------------- checkbox ----------------------------------- */
+
 .cameras__brand-label {
     cursor: pointer;
 }
 
-.checkbox {
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
     position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
+    z-index: -1;
 }
 
-.check-style {
-    position: absolute;
+.custom-checkbox {
+    display: inline-block;
     width: 18px;
     height: 18px;
-    border: 1px solid #d0d0d0;
+    background: #7993a6;
     border-radius: 4px;
+    margin: 0 9px 0 0;
+    vertical-align: sub;
+    position: relative;
 }
 
-.checkbox:checked + .check-style::before {
+.custom-checkbox::before {
     content: '';
-    background: url("../icons/check.svg") center no-repeat #7993a6;
-    width: 18px;
-    height: 18px;
-    border-radius: 4px;
+    display: inline-block;
+    width: 10px;
+    height: 9px;
+    background-image: url("../icons/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in;
 }
 
-.checkbox:disabled + .check-style::before {
-    content: '';
-    background-color: #dedede;
-    width: 18px;
-    height: 18px;
-    border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    cursor: auto;
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
 }
 
-/*.checkbox:focus + .check-style {
-    box-shadow: 0 0 0 1px #000;
-}*/
-
-.cameras__name {
-    padding: 0 0 0 27px;
-}
+/* ----------------------------------- checkbox ----------------------------------- */
 
 .cameras__items {}
 
