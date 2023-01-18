@@ -52,9 +52,10 @@ body {
 
 .cameras__price {
     display: flex;
+    margin: 0 0 24px 0;
 }
 
-.cameras__price-label {
+.cameras__shortcut {
     line-height: 1.4;
     font-weight: 700;
     font-size: 16px;
@@ -78,6 +79,10 @@ body {
 .cameras__price-input_2 {
     border-radius: 0 4px 4px 0;
 }
+
+.cameras__brands {}
+
+.cameras__brand {}
 
 .cameras__items {}
 

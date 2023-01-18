@@ -20,11 +20,24 @@
                     <div class="cameras__filter">
                         <div class="cameras__count">Товаров 143</div>
                         <h1 class="cameras__title">Камеры</h1>
-                        <label for="min-price" class="cameras__price-label">Цена, ₽</label>
+                        <label for="min-price" class="cameras__shortcut">Цена, ₽</label>
                         <div class="cameras__price">
-                            <input id="min-price" type="number" name="minimum" placeholder="0" class="cameras__price-input cameras__price-input_1">
-                            <label for="max-price" class="cameras__price-label" style="display: none"></label>
-                            <input id="max-price" type="number" name="minimum" placeholder="499000" class="cameras__price-input cameras__price-input_2">
+                            <input id="min-price" type="number" name="minimum-price" placeholder="0"
+                                   class="cameras__price-input cameras__price-input_1">
+                            <label for="max-price" class="cameras__shortcut" style="display: none"></label>
+                            <input id="max-price" type="number" name="maximum-price" placeholder="499000"
+                                   class="cameras__price-input cameras__price-input_2">
+                        </div>
+                        <div class="cameras__shortcut">Бренд</div>
+                        <div class="cameras__brands">
+                            <div class="cameras__brand">
+                                <input id="canon" type="checkbox" name="brand-canon" value="Canon">
+                                <label for="canon">Canon</label>
+                            </div>
+                            <div class="cameras__brand">
+                                <input id="nikon" type="checkbox" name="brand-nikon" value="Nikon">
+                                <label for="nikon">Nikon</label>
+                            </div>
                         </div>
                     </div>
                     <div class="cameras__items">
