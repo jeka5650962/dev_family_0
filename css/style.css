@@ -146,6 +146,10 @@ body {
     border: none;
 }
 
+.real-checkbox:disabled + .custom-checkbox {
+    cursor: auto;
+}
+
 .real-checkbox:checked + .custom-checkbox::before {
     transform: translate(-50%, -50%) scale(1);
 }
