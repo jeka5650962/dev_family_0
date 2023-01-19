@@ -28,14 +28,16 @@ body {
     padding: 64px 0;
 }
 
-.cameras {}
+.cameras {
+}
 
 .cameras__body {
     display: flex;
     column-gap: 38px;
 }
 
-.cameras__filter {}
+.cameras__filter {
+}
 
 .cameras__count {
     color: #898989;
@@ -80,7 +82,8 @@ body {
     border-radius: 0 4px 4px 0;
 }
 
-.cameras__brands {}
+.cameras__brands {
+}
 
 .cameras__brand {
     margin: 0 0 10px 0;
@@ -104,7 +107,7 @@ body {
     display: inline-block;
     width: 18px;
     height: 18px;
-    background: #7993a6;
+    border: 1px solid #a7a7a7;
     border-radius: 4px;
     margin: 0 9px 0 0;
     vertical-align: sub;
@@ -126,13 +129,19 @@ body {
     transition: .2s ease-in;
 }
 
+.real-checkbox:checked + .custom-checkbox {
+    background: #7993a6;
+    border: none;
+}
+
 .real-checkbox:checked + .custom-checkbox::before {
     transform: translate(-50%, -50%) scale(1);
 }
 
 /* ----------------------------------- checkbox ----------------------------------- */
 
-.cameras__items {}
+.cameras__items {
+}
 
 /* ----------------------------------- @media ----------------------------------- */
 
