@@ -168,27 +168,24 @@ body {
 
 /* ----------------------------------- checkbox ----------------------------------- */
 
-.cameras__items {}
-
-.cameras__row {
+.cameras__items {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -12px;
 }
 
 .cameras__column {
-    display: flex;
-    flex: 0 1 25%;
+    flex: 0 0 242px;
     padding: 0 12px;
 }
 
 .cameras__item {}
 
 .item {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #E6E6E6;
     border-radius: var(--radius);
+    background-color: #fff;
+    overflow: hidden;
 }
 
 .item__image {
@@ -209,7 +206,7 @@ body {
 
 .item__title {
     line-height: 1.4;
-    margin: 0 0 31px 0;
+    margin: 0 0 11px 0;
 }
 
 .item__price {
@@ -218,10 +215,10 @@ body {
 
 .item__btn {
     line-height: 1.4;
-    padding: 8px 15px;
     border: 1px solid #dbdbdb;
     border-radius: 8px;
     background-color: transparent;
+    padding: 8px 15px;
 }
 
 /* ----------------------------------- @media ----------------------------------- */
