@@ -1,9 +1,5 @@
 @import "nullstyle.css";
 
-:root {
-    --radius: 4px;
-}
-
 html, body {
     height: 100%;
 }
@@ -21,9 +17,10 @@ body {
 }
 
 [class*="__container"] {
-    max-width: 1300px;
+    max-width: 1302px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: content-box;
 }
 
 /* ----------------------------------- page ----------------------------------- */
@@ -41,6 +38,7 @@ body {
 }
 
 .cameras__filter {
+    flex: 0 0 224px;
 }
 
 .cameras__count {
@@ -127,7 +125,7 @@ body {
     width: 18px;
     height: 18px;
     border: 1px solid #d0d0d0;
-    border-radius: var(--radius);
+    border-radius: 4px;
     margin: 0 9px 0 0;
     vertical-align: sub;
     position: relative;
@@ -169,22 +167,22 @@ body {
 /* ----------------------------------- checkbox ----------------------------------- */
 
 .cameras__items {
+    flex: 1 1 auto;
     display: flex;
+    gap: 24px;
     flex-wrap: wrap;
-    margin: 0 -12px;
-}
-
-.cameras__column {
-    flex: 0 0 242px;
-    padding: 0 12px;
 }
 
 .cameras__item {}
 
 .item {
-    border: 1px solid #E6E6E6;
-    border-radius: var(--radius);
+    flex: 0 0 242px;
+}
+
+.item__body {
     background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
     overflow: hidden;
 }
 
@@ -200,25 +198,20 @@ body {
     object-position: center;
 }
 
-.item__info {
-    padding: 12px 16px 16px 16px;
-}
+.item__info {}
 
 .item__title {
     line-height: 1.4;
-    margin: 0 0 11px 0;
 }
 
-.item__price {
-    margin: 0 0 18px 0;
-}
+.item__price {}
 
 .item__btn {
     line-height: 1.4;
     border: 1px solid #dbdbdb;
     border-radius: 8px;
-    background-color: transparent;
     padding: 8px 15px;
+    background-color: transparent;
 }
 
 /* ----------------------------------- @media ----------------------------------- */
