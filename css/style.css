@@ -261,6 +261,7 @@ body {
 }
 
 .item__like {
+    background: url("../icons/like-stroke.svg") 0 0 no-repeat;
     width: 21px;
     height: 18px;
     position: absolute;
@@ -274,11 +275,7 @@ body {
     scale: 1.1;
 }
 
-.item__like.default {
-    background: url("../icons/like-stroke.svg") 0 0 no-repeat;
-}
-
-.item__like.liked {
+.item__like.active {
     background: url("../icons/like-active.svg") 0 0 no-repeat;
 }
 
