@@ -173,7 +173,8 @@ body {
     flex-wrap: wrap;
 }
 
-.cameras__item {}
+.cameras__item {
+}
 
 .item {
     flex: 0 0 242px;
