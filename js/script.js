@@ -1,5 +1,8 @@
-let setLike = document.querySelector('.item__like')
+const setLike = document.querySelectorAll('.item__like')
 
-setLike.onclick = function () {
-    setLike.classList.toggle('active')
-}
+setLike.forEach(item => {
+    item.addEventListener('click', () => {
+        item.classList.toggle('active')
+    })
+})
+
