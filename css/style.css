@@ -264,5 +264,22 @@ body {
     border: 1px solid #a7a7a7;
 }
 
+.item__like {
+    width: 21px;
+    height: 18px;
+    position: absolute;
+    bottom: 28px;
+    right: 18px;
+    cursor: pointer;
+}
+
+.item__like.default {
+    background: url("../icons/like-stroke.svg") 0 0 no-repeat;
+}
+
+.item__like.liked {
+    background: url("../icons/like-active.svg") 0 0 no-repeat;
+}
+
 /* ----------------------------------- @media ----------------------------------- */
 
