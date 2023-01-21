@@ -1,5 +1,5 @@
-let itemLike = document.querySelector('.item__like')
+let setLike = document.querySelector('.item__like')
 
-itemLike.onclick = function () {
-    itemLike.classList.toggle('active')
+setLike.onclick = function () {
+    setLike.classList.toggle('active')
 }
