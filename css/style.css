@@ -190,6 +190,23 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.item__new {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #fff;
+    background-color: #44c477;
+    border-radius: 26px;
+    width: 79px;
+    text-align: center;
+    padding: 5px 10px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
 }
 
 .item__image {
@@ -228,6 +245,11 @@ body {
     padding: 8px 15px;
     background-color: transparent;
     width: 106px;
+    transition: border .2s ease-in;
+}
+
+.item__btn:hover {
+    border: 1px solid #a7a7a7;
 }
 
 /* ----------------------------------- @media ----------------------------------- */
