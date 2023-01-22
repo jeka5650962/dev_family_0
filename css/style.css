@@ -122,10 +122,6 @@ body {
     z-index: -1;
 }
 
-/*.real-checkbox:focus + .custom-checkbox {
-    box-shadow: 0 0 0 1px #38577a, 0 0 10px #7e9bbd;
-}*/
-
 .custom-checkbox {
     display: inline-block;
     width: 18px;
@@ -274,9 +270,6 @@ body {
     background: url("../icons/like-stroke.svg") 0 0 no-repeat;
     width: 21px;
     height: 18px;
-    /*position: absolute;*/
-    /*bottom: 26px;*/
-    /*right: 18px;*/
     cursor: pointer;
     transition: scale .2s ease-in;
 }
@@ -299,13 +292,13 @@ body {
     .cameras__body {
         flex-direction: column;
         column-gap: normal;
-        /*row-gap: 35px;*/
     }
 
     .cameras__filter {
         flex: 0 1 auto;
         display: flex;
         flex-direction: column;
+        margin-bottom: 5px;
     }
 
     .cameras__count {
