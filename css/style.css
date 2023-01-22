@@ -284,6 +284,16 @@ body {
 
 /* ----------------------------------- @media ----------------------------------- */
 
+@media (max-width: 1341px) {
+    .cameras__items {
+        justify-content: space-between;
+    }
+
+    .item {
+        flex: 1 1 auto;
+    }
+}
+
 @media (max-width: 375px) {
     .page {
         padding: 47px 0;
