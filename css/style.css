@@ -293,7 +293,7 @@ body {
     .cameras__body {
         flex-direction: column;
         column-gap: normal;
-        row-gap: 35px;
+        /*row-gap: 35px;*/
     }
 
     .cameras__filter {
@@ -340,6 +340,10 @@ body {
         flex-direction: row;
         flex: 1 1 auto;
         padding: 20px 0;
+    }
+
+    .item:not(:last-child) {
+        border-bottom: 1px solid #e6e6e6;
     }
 
     .item__body {
