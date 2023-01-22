@@ -333,20 +333,29 @@ body {
 
     .cameras__items {
         gap: normal;
-        row-gap: 40px;
         flex: 0 1 auto;
     }
 
     .item {
         flex-direction: row;
         flex: 1 1 auto;
+        padding: 20px 0;
     }
 
     .item__body {
         flex-direction: row;
+        align-items: center;
+        border: none;
+        border-radius: 0;
     }
 
     .item__image {
         height: 124px;
+        flex: 0 0 124px;
+    }
+
+    .item__info {
+        padding: 0 16px;
+        height: 100%;
     }
 }
