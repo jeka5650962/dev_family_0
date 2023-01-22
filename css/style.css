@@ -244,6 +244,12 @@ body {
     justify-content: space-between;
 }
 
+.item__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .item__new {
     font-weight: 500;
     font-size: 11px;
@@ -268,9 +274,9 @@ body {
     background: url("../icons/like-stroke.svg") 0 0 no-repeat;
     width: 21px;
     height: 18px;
-    position: absolute;
-    bottom: 26px;
-    right: 18px;
+    /*position: absolute;*/
+    /*bottom: 26px;*/
+    /*right: 18px;*/
     cursor: pointer;
     transition: scale .2s ease-in;
 }
@@ -327,9 +333,6 @@ body {
     .cameras__brands {
         order: 6;
     }
-
-
-
 
     .cameras__items {
         gap: normal;
