@@ -281,3 +281,46 @@ body {
 
 /* ----------------------------------- @media ----------------------------------- */
 
+@media (max-width: 375px) {
+    .page {
+        padding: 47px 0;
+    }
+
+    .cameras__body {
+        flex-direction: column;
+        column-gap: normal;
+        row-gap: 35px;
+    }
+
+    .cameras__filter {
+        flex: 0 1 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cameras__count {
+        order: 2;
+        margin: 0 0 18px 0;
+    }
+
+    .cameras__title {
+        order: 1;
+    }
+
+    .cameras__shortcut_1 {
+        order: 3;
+    }
+
+    .cameras__price {
+        width: 224px;
+        order: 4;
+    }
+
+    .cameras__shortcut_2 {
+        order: 5;
+    }
+
+    .cameras__brands {
+        order: 6;
+    }
+}
