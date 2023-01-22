@@ -344,7 +344,6 @@ body {
 
     .item__body {
         flex-direction: row;
-        align-items: center;
         border: none;
         border-radius: 0;
     }
