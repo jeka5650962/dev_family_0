@@ -286,15 +286,18 @@ body {
 
 @media (max-width: 1341px) {
     .cameras__items {
-        /*flex: 1 1 auto;*/
-    }
-
-    .item {
-        /*flex: 1 1 auto;*/
+        display: grid;
+        grid-template-columns: repeat(3, minmax(242px, 1fr));
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1076px) {
+    .cameras__items {
+        grid-template-columns: repeat(2, minmax(242px, 1fr));
+    }
+}
+
+@media (max-width: 810px) {
     .page {
         padding: 47px 0;
     }
@@ -336,7 +339,15 @@ body {
     .cameras__brands {
         order: 6;
     }
+}
 
+@media (max-width: 548px) {
+    .cameras__items {
+        grid-template-columns: minmax(242px, 1fr);
+    }
+}
+
+@media (max-width: 375px) {
     .cameras__items {
         gap: normal;
         flex: 0 1 auto;
