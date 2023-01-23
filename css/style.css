@@ -311,7 +311,7 @@ body {
         flex: 0 1 auto;
         display: flex;
         flex-direction: column;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
     }
 
     .cameras__count {
@@ -348,6 +348,10 @@ body {
 }
 
 @media (max-width: 375px) {
+    .cameras__filter {
+        margin-bottom: 0;
+    }
+
     .cameras__items {
         gap: normal;
         flex: 0 1 auto;
